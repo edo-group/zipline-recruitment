@@ -9,7 +9,7 @@ EdoMatch is hiring 60 people across Zipline's 3 new Côte d'Ivoire hubs.
 
 - Hero + animated flight route across the 3 hubs
 - Zipline brand story & Africa mission (short)
-- Hubs: **Biankouma · Kouto · San Pédro** (20 hires each). Training at Daloa, interviews in Abidjan.
+- Hubs: **Biankouma · Kouto · San Pédro** (20 hires each). Interviews are online; training runs at Zipline's Daloa hub before you start.
 - 6 roles, each linking to its live application form on edomatch.com
 - Housing allowance for relocation (**no salary figures anywhere on the page**)
 - Referral block with WhatsApp / Facebook / copy-link sharing
