@@ -170,12 +170,12 @@ section{padding-block:clamp(56px,8vw,92px)}
   border:1px solid var(--line);border-radius:var(--radius);
   padding:18px 18px 16px;
 }
+/* Shown uncropped at its natural ratio — swap in the landscape original
+   and it will simply render wider; no CSS change needed. */
 .route-photo{
   width:100%;height:auto;border-radius:10px;margin-bottom:18px;
-  aspect-ratio:4/5;object-fit:cover;object-position:50% 22%;
   background:var(--violet-soft);
 }
-@media(min-width:900px){.route-photo{aspect-ratio:3/4}}
 .route-lbl{
   font-family:var(--f-mono);font-size:.66rem;letter-spacing:.15em;text-transform:uppercase;
   color:var(--muted);margin-bottom:10px;
