@@ -9,7 +9,7 @@
 <meta property="og:site_name" content="EdoMatch x Zipline">
 <meta property="og:url" content="https://www.zipline-recruitment-edomatch.com/">
 <meta property="og:title" content="Zipline recrute pour 3 nouveaux sites en Côte d'Ivoire">
-<meta property="og:description" content="Biankouma, Kouto, San Pédro. 6 métiers, 60 postes. Logement pris en charge. Candidature en 2 minutes.">
+<meta property="og:description" content="6 métiers, 60 postes au total. Biankouma, Kouto, San Pédro. Logement pris en charge.">
 <meta name="twitter:card" content="summary_large_image">
 <title>Zipline Côte d'Ivoire</title>
 <meta name="description" content="EdoMatch recrute 60 personnes pour les 3 nouveaux sites Zipline en Côte d'Ivoire : Biankouma, Kouto et San Pédro.">
@@ -366,6 +366,24 @@ section{padding-block:clamp(56px,8vw,92px)}
 .role-go svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;transition:transform .15s ease}
 .role:hover .role-go svg{transform:translateX(3px)}
 
+.anyway{
+  display:flex;align-items:center;gap:14px;margin-top:16px;
+  background:var(--violet-soft);border:1px solid var(--violet);border-radius:var(--radius);
+  padding:20px 22px;text-decoration:none;
+  transition:transform .15s ease,box-shadow .15s ease;
+}
+.anyway:hover{transform:translateY(-2px);box-shadow:0 6px 22px -12px var(--violet)}
+.anyway-ico{
+  width:34px;height:34px;border-radius:99px;background:var(--violet);
+  display:grid;place-items:center;flex:none;
+}
+.anyway-ico svg{width:17px;height:17px;fill:none;stroke:#fff;stroke-width:2.4;stroke-linecap:round}
+.anyway-txt{display:flex;flex-direction:column;gap:4px;min-width:0}
+.anyway-txt b{font-family:var(--f-display);font-size:1.05rem;font-weight:700;letter-spacing:-.015em;color:var(--ink)}
+.anyway-txt span{font-size:.93rem;color:var(--body)}
+.anyway-go{width:17px;height:17px;flex:none;margin-left:auto;fill:none;stroke:var(--violet);stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+@media(max-width:600px){.anyway-go{display:none}}
+
 /* ============ OFFER ============ */
 .offer-grid{display:grid;gap:14px}
 @media(min-width:700px){.offer-grid{grid-template-columns:repeat(2,1fr)}}
@@ -448,13 +466,13 @@ section{padding-block:clamp(56px,8vw,92px)}
         <span lang="en">Zipline is hiring for <span class="hl-mark">3 new locations</span> in Côte d'Ivoire.</span>
       </h1>
       <p class="lede">
-        <span lang="fr">60 recrutements. 6 métiers. Le logement est pris en charge si vous déménagez. Candidature en 2 minutes.</span>
-        <span lang="en">60 hires. 6 jobs. Housing allowance if you relocate. Apply in 2 minutes.</span>
+        <span lang="fr">6 métiers, 60 postes au total. Le logement est pris en charge si vous déménagez. Candidature en 2 minutes.</span>
+        <span lang="en">6 roles, 60 jobs in total. Housing allowance if you relocate. Apply in 2 minutes.</span>
       </p>
       <div class="cta-row">
         <a class="btn btn-primary" href="#postes">
-          <span lang="fr">Voir les 6 postes</span>
-          <span lang="en">See the 6 jobs</span>
+          <span lang="fr">Voir les 6 métiers</span>
+          <span lang="en">See the 6 roles</span>
         </a>
         <a class="btn btn-ghost" href="#hubs">
           <span lang="fr">Où sont les sites&nbsp;?</span>
@@ -569,9 +587,9 @@ section{padding-block:clamp(56px,8vw,92px)}
   <div class="facts" style="margin-top:clamp(40px,6vw,64px)">
     <div class="wrap facts-in">
       <div class="fact"><b>3</b><span lang="fr">Sites</span><span lang="en">Locations</span></div>
-      <div class="fact"><b>60</b><span lang="fr">Postes</span><span lang="en">Roles</span></div>
-      <div class="fact"><b>6</b><span lang="fr">Métiers</span><span lang="en">Job types</span></div>
-      <div class="fact"><b>0&ndash;5</b><span lang="fr">Ans d'expérience</span><span lang="en">Years experience</span></div>
+      <div class="fact"><b>60</b><span lang="fr">Postes au total</span><span lang="en">Jobs in total</span></div>
+      <div class="fact"><b>6</b><span lang="fr">Métiers</span><span lang="en">Roles</span></div>
+      <div class="fact"><b>2 min</b><span lang="fr">Pour postuler</span><span lang="en">To apply</span></div>
     </div>
   </div>
 </div>
@@ -581,16 +599,16 @@ section{padding-block:clamp(56px,8vw,92px)}
   <div class="wrap">
     <div class="head">
       <p class="eyebrow">
-        <span lang="fr">Les postes</span>
-        <span lang="en">The jobs</span>
+        <span lang="fr">Les métiers</span>
+        <span lang="en">The roles</span>
       </p>
       <h2>
-        <span lang="fr">6 métiers. Choisissez le vôtre et postulez.</span>
-        <span lang="en">6 jobs. Pick yours and apply.</span>
+        <span lang="fr">6 métiers, 60 postes. Choisissez le vôtre et postulez.</span>
+        <span lang="en">6 roles, 60 jobs. Pick yours and apply.</span>
       </h2>
       <p>
-        <span lang="fr">Chaque métier est recruté sur les trois sites. Cliquez pour lire la description complète et déposer votre candidature.</span>
-        <span lang="en">Every job is hired across all three locations. Tap to read the full description and submit your application.</span>
+        <span lang="fr">Chacun des 6 métiers est recruté sur les trois sites, soit 60 postes au total. Cliquez pour lire la description complète et postuler.</span>
+        <span lang="en">Each of the 6 roles is hired across the three locations, making 60 jobs in total. Tap to read the full description and apply.</span>
       </p>
     </div>
 
@@ -600,8 +618,8 @@ section{padding-block:clamp(56px,8vw,92px)}
         <div class="role-main">
           <h3><span lang="fr">Opérateur polyvalent</span><span lang="en">Dual Operator</span></h3>
           <p class="role-meta">
-            <span lang="fr">Formation scientifique ou technique &middot; 0&ndash;2 ans d'expérience</span>
-            <span lang="en">Science or engineering background &middot; 0&ndash;2 years' experience</span>
+            <span lang="fr">Vous préparez et lancez les vols, et vous suivez les livraisons.</span>
+            <span lang="en">You prepare and launch the flights, and follow the deliveries.</span>
           </p>
         </div>
         <span class="role-count"><span lang="fr">24 postes</span><span lang="en">24 roles</span></span>
@@ -615,8 +633,8 @@ section{padding-block:clamp(56px,8vw,92px)}
         <div class="role-main">
           <h3><span lang="fr">Technicien de maintenance aéronautique</span><span lang="en">Flight Technician</span></h3>
           <p class="role-meta">
-            <span lang="fr">Génie mécanique ou électrique &middot; 0&ndash;3 ans d'expérience</span>
-            <span lang="en">Mechanical or electrical engineering &middot; 0&ndash;3 years' experience</span>
+            <span lang="fr">Vous entretenez et réparez les avions entre les vols.</span>
+            <span lang="en">You maintain and repair the planes between flights.</span>
           </p>
         </div>
         <span class="role-count"><span lang="fr">15 postes</span><span lang="en">15 roles</span></span>
@@ -630,8 +648,8 @@ section{padding-block:clamp(56px,8vw,92px)}
         <div class="role-main">
           <h3><span lang="fr">Spécialiste des opérations de préparation des commandes</span><span lang="en">Fulfillment Operations Specialist</span></h3>
           <p class="role-meta">
-            <span lang="fr">Pharmacie diplômée ou logistique de santé &middot; 1&ndash;5 ans d'expérience</span>
-            <span lang="en">Licensed pharmacy or health logistics &middot; 1&ndash;5 years' experience</span>
+            <span lang="fr">Vous préparez les commandes médicales avant chaque vol.</span>
+            <span lang="en">You prepare the medical orders before each flight.</span>
           </p>
         </div>
         <span class="role-count"><span lang="fr">9 postes</span><span lang="en">9 roles</span></span>
@@ -645,8 +663,8 @@ section{padding-block:clamp(56px,8vw,92px)}
         <div class="role-main">
           <h3><span lang="fr">Conseiller(ère) relation client</span><span lang="en">Customer Care Advocate</span></h3>
           <p class="role-meta">
-            <span lang="fr">Profil scientifique ou santé &middot; 0&ndash;2 ans d'expérience</span>
-            <span lang="en">Science or health background &middot; 0&ndash;2 years' experience</span>
+            <span lang="fr">Vous répondez aux centres de santé et suivez leurs commandes.</span>
+            <span lang="en">You answer the health centres and follow up their orders.</span>
           </p>
         </div>
         <span class="role-count"><span lang="fr">6 postes</span><span lang="en">6 roles</span></span>
@@ -660,8 +678,8 @@ section{padding-block:clamp(56px,8vw,92px)}
         <div class="role-main">
           <h3><span lang="fr">Coordinateur(trice) des partenariats</span><span lang="en">Partnerships Coordinator</span></h3>
           <p class="role-meta">
-            <span lang="fr">Relations partenaires &middot; hôpitaux, communautés, autorités locales</span>
-            <span lang="en">Stakeholder management &middot; hospitals, communities, local government</span>
+            <span lang="fr">Vous travaillez avec les hôpitaux, les communautés et les autorités.</span>
+            <span lang="en">You work with the hospitals, the communities and local authorities.</span>
           </p>
         </div>
         <span class="role-count"><span lang="fr">3 postes</span><span lang="en">3 roles</span></span>
@@ -675,8 +693,8 @@ section{padding-block:clamp(56px,8vw,92px)}
         <div class="role-main">
           <h3><span lang="fr">Superviseur des installations</span><span lang="en">Facility Supervisor</span></h3>
           <p class="role-meta">
-            <span lang="fr">Maintenance des sites &middot; électricité, groupes électrogènes, eau, sécurité</span>
-            <span lang="en">Facilities maintenance &middot; electrical, generators, water, security</span>
+            <span lang="fr">Vous gardez le site en état : électricité, eau, groupes, sécurité.</span>
+            <span lang="en">You keep the site running: power, water, generators, security.</span>
           </p>
         </div>
         <span class="role-count"><span lang="fr">3 postes</span><span lang="en">3 roles</span></span>
@@ -687,6 +705,19 @@ section{padding-block:clamp(56px,8vw,92px)}
       </a>
 
     </div>
+
+    <a class="anyway" href="https://www.edomatch.com/">
+      <span class="anyway-ico" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+      </span>
+      <span class="anyway-txt">
+        <b lang="fr">Aucun poste ne vous correspond&nbsp;? Inscrivez-vous quand même.</b>
+        <b lang="en">None of these fit you? Sign up anyway.</b>
+        <span lang="fr">Votre profil reste chez EdoMatch et nous vous proposons d'autres offres en Côte d'Ivoire. C'est gratuit et ça prend 2 minutes.</span>
+        <span lang="en">Your profile stays with EdoMatch and we send you other jobs in Côte d'Ivoire. It's free and takes 2 minutes.</span>
+      </span>
+      <svg class="anyway-go" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
   </div>
 </section>
 
@@ -738,7 +769,7 @@ section{padding-block:clamp(56px,8vw,92px)}
       </h2>
       <p>
         <span lang="fr">Un site, c'est la base d'où les avions décollent. Chaque site a besoin des mêmes 6 métiers. Vous postulez une fois pour le métier qui vous correspond&nbsp;— nous vous orientons vers le site.</span>
-        <span lang="en">A location is the base the planes take off from. Each one needs the same 6 jobs. You apply once for the job that fits you — we place you at a location.</span>
+        <span lang="en">A location is the base the planes take off from. Each one needs the same 6 roles. You apply once for the job that fits you — we place you at a location.</span>
       </p>
     </div>
 
@@ -918,7 +949,7 @@ section{padding-block:clamp(56px,8vw,92px)}
     "Zipline recrute en Côte d'Ivoire.",
     "",
     "60 postes sur 3 nouveaux sites : Biankouma, Kouto et San Pédro.",
-    "6 métiers ouverts, du technicien au pharmacien.",
+    "6 métiers, du technicien au pharmacien.",
     "Logement pris en charge si tu déménages. Entretiens en ligne.",
     "",
     "Toutes les infos et candidature 👉 "
@@ -927,7 +958,7 @@ section{padding-block:clamp(56px,8vw,92px)}
     "Zipline is hiring in Côte d'Ivoire.",
     "",
     "60 roles across 3 new locations: Biankouma, Kouto and San Pédro.",
-    "6 jobs open, from technician to pharmacist.",
+    "6 roles, from technician to pharmacist.",
     "Housing allowance if you relocate. Interviews are online.",
     "",
     "Full details and application 👉 "
