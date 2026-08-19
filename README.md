@@ -7,10 +7,14 @@ EdoMatch is hiring 60 people across Zipline's 3 new Côte d'Ivoire hubs.
 
 ## What's on the page
 
+Section order is deliberate: the 6 jobs come first, directly under the hero, so
+ad traffic can apply without scrolling. Everything else sits below them.
+
 - Hero + phone mockup of the Instagram ad + animated flight route across the 3 hubs
 - Zipline brand story & Africa mission (short)
-- Hubs: **Biankouma · Kouto · San Pédro** (20 hires each). Interviews are online; training runs at Zipline's Daloa hub before you start.
-- 6 roles, each linking to its live application form on edomatch.com
+- Locations: **Biankouma · Kouto · San Pedro** (20 hires each). Interviews are online;
+  training runs at Zipline's Daloa site before you start.
+- 6 roles (first section), each linking to its live application form on edomatch.com
 - Housing allowance for relocation (**no salary figures anywhere on the page**)
 - Referral block with WhatsApp / Facebook / copy-link sharing
 - FR default, EN toggle, remembered in localStorage. Light + dark theme.
@@ -57,3 +61,10 @@ Edit both halves so the toggle stays in sync, then commit and push — Railway r
 - Colours: Zipline brand (cream `#F7F4E8`, violet `#6C3FFF`) for the body;
   EdoMatch (black `#0D0D0D`, green `#5AA946`) for header, footer and referral block.
 - No salary figures anywhere on the page — housing allowance only.
+
+## Wording
+
+The page says **sites** (FR) / **locations** (EN), never "hubs" — candidates
+don't reliably know the word. The locations section defines it once: *"Un site,
+c'est la base d'ou les avions decollent."* Keep that vocabulary if you edit copy.
+The `#hubs` id and `.hub` classes are internal only and are not shown to readers.

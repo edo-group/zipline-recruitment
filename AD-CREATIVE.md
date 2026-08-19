@@ -1,35 +1,54 @@
 # The Instagram mockup in the hero
 
-The hero shows a phone running the Instagram feed, matching the real screenshot:
-status bar, Instagram wordmark, stories row, the sponsored post, action icons,
-caption and bottom nav.
+The hero shows a phone running the Instagram feed. Inside the post sits the
+**complete ad creative, uncropped** — a square image, one per language.
 
-## The ad creative is HTML, not an image
+## Two files
 
-The creative inside the post is **composed in HTML/CSS**, not a flat picture.
-That means it switches language with the rest of the page automatically:
+| Language | File |
+|---|---|
+| FR | `creative-fr.jpg` |
+| EN | `creative-en.jpg` |
 
-| | FR | EN |
-|---|---|---|
-| Headline | Nous **recrutons !** | We are **hiring!** |
-| Sub | 6 metiers. Aucune experience requise — nous vous formons. | 6 jobs. No experience needed — we train you. |
-| Button | Postulez maintenant | Apply now |
-| Footer | Cliquez sur le lien pour les JOBS ! | Click the link for the JOBS! |
+Both `<img class="ig-cr-img">` tags currently point at the same placeholder.
+Replace them with the final exports before the campaign runs.
 
-To edit the wording, search `ig-cr-h`, `ig-cr-sub`, `ig-cr-btn`, `ig-cr-foot`
-in `index.html` and change both the `lang="fr"` and `lang="en"` halves.
+## To swap them in
 
-Only the photo band is a real image (`cr-photo.jpg`, inlined as base64) — a
-text-free frame cropped from the ad screenshot.
+Save both squares in this folder, then:
+
+```bash
+python3 - <<'PY'
+import base64, io, pathlib, re
+from PIL import Image
+def uri(p):
+    im = Image.open(p).convert('RGB')
+    im = im.resize((640, round(640*im.height/im.width)), Image.LANCZOS)
+    b = io.BytesIO(); im.save(b, 'JPEG', quality=82, optimize=True, progressive=True)
+    return 'data:image/jpeg;base64,' + base64.b64encode(b.getvalue()).decode()
+fr, en = uri('creative-fr.jpg'), uri('creative-en.jpg')
+p = pathlib.Path('index.html'); h = p.read_text(encoding='utf-8')
+h = re.sub(r'(<img class="ig-cr-img" lang="fr" src=")[^"]*(")', lambda m: m.group(1)+fr+m.group(2), h, count=1)
+h = re.sub(r'(<img class="ig-cr-img" lang="en" src=")[^"]*(")', lambda m: m.group(1)+en+m.group(2), h, count=1)
+p.write_text(h, encoding='utf-8')
+print('done —', round(len(h)/1024), 'KB total')
+PY
+```
+
+Keep each square under ~60 KB after compression. The page ships as one
+self-contained file and most traffic arrives on mobile data.
+
+## Check before launch
+
+Make sure the towns named in the creatives match the towns listed on the page.
+If they differ, candidates apply for jobs in the wrong place.
 
 ## Privacy
 
-The stories row shows abstract blurred circles and blurred name bars. No real
-person's photo or handle appears. The post is attributed to `edomatch`
-(the ad account), not a personal handle.
+The stories row is abstract blurred circles with blurred name bars. No real
+person's photo or handle appears. The post is attributed to `edomatch`.
 
 ## Watch out when editing CSS
 
-`.route > svg` is deliberately a direct-child selector. Using `.route svg`
-would also match every icon inside the phone mockup and blow them up to
-full width.
+`.route > svg` is deliberately a direct-child selector. `.route svg` would also
+match every icon inside the phone mockup and blow them up to full width.
