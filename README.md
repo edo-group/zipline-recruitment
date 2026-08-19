@@ -7,7 +7,7 @@ EdoMatch is hiring 60 people across Zipline's 3 new Côte d'Ivoire hubs.
 
 ## What's on the page
 
-- Hero + animated flight route across the 3 hubs
+- Hero + phone mockup of the Instagram ad + animated flight route across the 3 hubs
 - Zipline brand story & Africa mission (short)
 - Hubs: **Biankouma · Kouto · San Pédro** (20 hires each). Interviews are online; training runs at Zipline's Daloa hub before you start.
 - 6 roles, each linking to its live application form on edomatch.com
@@ -51,7 +51,9 @@ Edit both halves so the toggle stays in sync, then commit and push — Railway r
 
 ## Notes
 
-- The hero photo is inlined in `index.html`; `hero.jpg` is the source copy. See `HERO-PHOTO.md`.
+- The hero shows a phone mockup with the Instagram ad inside it. Swapping the
+  creative: see `AD-CREATIVE.md`. **The French creative still needs to replace
+  the English placeholder before launch.**
 - Colours: Zipline brand (cream `#F7F4E8`, violet `#6C3FFF`) for the body;
   EdoMatch (black `#0D0D0D`, green `#5AA946`) for header, footer and referral block.
 - No salary figures anywhere on the page — housing allowance only.
