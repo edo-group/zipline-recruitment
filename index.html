@@ -1,0 +1,778 @@
+<!doctype html>
+<html lang="fr" data-lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="canonical" href="https://www.zipline-recruitment-edomatch.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="EdoMatch x Zipline">
+<meta property="og:url" content="https://www.zipline-recruitment-edomatch.com/">
+<meta property="og:title" content="Zipline recrute 60 personnes en Côte d'Ivoire">
+<meta property="og:description" content="3 nouveaux hubs — Biankouma, Kouto, San Pédro. 6 métiers. Logement pris en charge. Candidature en 2 minutes.">
+<meta name="twitter:card" content="summary_large_image">
+<title>Zipline Côte d'Ivoire</title>
+<meta name="description" content="EdoMatch recrute 60 personnes pour les 3 nouveaux hubs Zipline en Côte d'Ivoire : Biankouma, Kouto et San Pédro.">
+</head>
+<body>
+<style>
+/* ============ TOKENS ============ */
+:root{
+  --violet-900:#2E0F47;
+  --violet-700:#4C1D6B;
+  --violet-500:#6D28A8;
+  --violet-300:#A473D6;
+  --hivis:#CDEF4A;
+  --hivis-ink:#3A4A05;
+  --laterite:#B4482C;
+
+  --ink:#1B1220;
+  --body:#3B3143;
+  --muted:#6E6478;
+  --line:#E3DCEA;
+  --paper:#FFFFFF;
+  --surface:#F5F2F8;
+  --surface-2:#EEE8F3;
+
+  --hero-ink:#FFFFFF;
+  --hero-body:#DDD0EA;
+  --hero-ground:var(--violet-900);
+
+  --radius:14px;
+  --maxw:1120px;
+
+  --f-display:"SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --f-body:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --f-mono:ui-monospace,SFMono-Regular,"SF Mono","Roboto Mono",Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ink:#F6F1FA;
+    --body:#D6CBE0;
+    --muted:#9F93AC;
+    --line:#3A2B48;
+    --paper:#150C1D;
+    --surface:#1E1329;
+    --surface-2:#281A36;
+    --violet-300:#C9A6EE;
+    --hero-ground:#0D0614;
+  }
+}
+:root[data-theme="dark"]{
+  --ink:#F6F1FA;
+  --body:#D6CBE0;
+  --muted:#9F93AC;
+  --line:#3A2B48;
+  --paper:#150C1D;
+  --surface:#1E1329;
+  --surface-2:#281A36;
+  --violet-300:#C9A6EE;
+  --hero-ground:#0D0614;
+}
+
+/* ============ BASE ============ */
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--body);
+  font-family:var(--f-body);
+  font-size:17px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{color:var(--ink);font-family:var(--f-display);text-wrap:balance;margin:0}
+h1{font-size:clamp(2.3rem,7vw,4.15rem);line-height:1.02;font-weight:800;letter-spacing:-.035em}
+h2{font-size:clamp(1.65rem,4vw,2.5rem);line-height:1.08;font-weight:800;letter-spacing:-.03em}
+h3{font-size:1.16rem;line-height:1.25;font-weight:700;letter-spacing:-.015em}
+p{margin:0}
+:focus-visible{outline:3px solid var(--hivis);outline-offset:3px;border-radius:4px}
+:focus:not(:focus-visible){outline:none}
+
+.wrap{max-width:var(--maxw);margin-inline:auto;padding-inline:22px}
+.eyebrow{
+  font-family:var(--f-mono);font-size:.7rem;font-weight:600;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--muted);
+}
+section{padding-block:clamp(56px,8vw,92px)}
+[id]{scroll-margin-top:78px}
+
+/* ============ LANGUAGE SWITCH ============ */
+:root[data-lang="en"] [lang="fr"]{display:none}
+:root[data-lang="fr"] [lang="en"]{display:none}
+
+/* ============ HEADER ============ */
+.hdr{
+  position:sticky;top:0;z-index:50;
+  background:color-mix(in srgb,var(--hero-ground) 88%,transparent);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid rgba(255,255,255,.1);
+}
+.hdr-in{display:flex;align-items:center;gap:16px;padding-block:13px}
+.brands{display:flex;align-items:center;gap:13px;min-width:0}
+.zip-logo{height:20px;width:auto;color:#fff;flex:none}
+.edo-logo{height:17px;width:auto;flex:none}
+.x{color:rgba(255,255,255,.42);font-size:.95rem;flex:none}
+.lang{display:flex;gap:2px;margin-left:auto;background:rgba(255,255,255,.11);border-radius:99px;padding:3px;flex:none}
+.lang button{
+  font:inherit;font-size:.75rem;font-weight:700;letter-spacing:.06em;
+  padding:5px 12px;border:0;border-radius:99px;background:transparent;
+  color:rgba(255,255,255,.7);cursor:pointer;font-family:var(--f-mono);
+}
+.lang button[aria-pressed="true"]{background:var(--hivis);color:var(--hivis-ink)}
+
+/* ============ HERO ============ */
+.hero{
+  background:var(--hero-ground);
+  color:var(--hero-body);
+  padding-block:clamp(44px,7vw,76px) 0;
+  position:relative;overflow:hidden;
+}
+.hero h1{color:var(--hero-ink)}
+.hero-grid{display:grid;gap:clamp(34px,5vw,54px);align-items:center}
+@media(min-width:900px){.hero-grid{grid-template-columns:1.06fr .94fr}}
+.hero .eyebrow{color:var(--hivis)}
+.hero-copy{display:flex;flex-direction:column;gap:20px}
+.lede{font-size:clamp(1.05rem,2.2vw,1.24rem);color:var(--hero-body);max-width:34ch}
+.hl-mark{
+  background:var(--hivis);color:var(--hivis-ink);
+  padding:0 .12em;border-radius:3px;box-decoration-break:clone;-webkit-box-decoration-break:clone;
+}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:4px}
+.btn{
+  display:inline-flex;align-items:center;gap:9px;
+  font-family:var(--f-body);font-size:1rem;font-weight:700;letter-spacing:-.01em;
+  padding:14px 24px;border-radius:99px;border:0;text-decoration:none;cursor:pointer;
+  transition:transform .14s ease,filter .14s ease;
+}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--hivis);color:var(--hivis-ink)}
+.btn-ghost{background:transparent;color:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.32)}
+.btn-ghost:hover{box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.6)}
+
+/* hero visual: flight route */
+.route{
+  position:relative;background:rgba(255,255,255,.055);
+  border:1px solid rgba(255,255,255,.13);border-radius:var(--radius);
+  padding:20px 20px 16px;
+}
+.route-photo{
+  width:100%;height:auto;border-radius:9px;margin-bottom:16px;
+  aspect-ratio:16/9;object-fit:cover;background:var(--violet-700);
+}
+.route-lbl{
+  font-family:var(--f-mono);font-size:.66rem;letter-spacing:.15em;text-transform:uppercase;
+  color:rgba(255,255,255,.55);margin-bottom:10px;
+}
+.route svg{width:100%;height:auto;display:block}
+.arc{fill:none;stroke:var(--hivis);stroke-width:1.6;stroke-linecap:round;stroke-dasharray:3 4}
+.nest-dot{fill:var(--hivis)}
+.nest-ring{fill:none;stroke:var(--hivis);stroke-width:1.2;opacity:.42}
+.nest-txt{fill:#fff;font-family:var(--f-mono);font-size:7px;letter-spacing:.06em;font-weight:600}
+.nest-sub{fill:rgba(255,255,255,.5);font-family:var(--f-mono);font-size:5.4px;letter-spacing:.08em}
+@media(prefers-reduced-motion:no-preference){
+  .arc{stroke-dasharray:260;stroke-dashoffset:260;animation:draw 1.5s .25s ease-out forwards}
+  .nest-mark{opacity:0;animation:pop .45s ease-out forwards}
+  .nest-mark:nth-of-type(1){animation-delay:.65s}
+  .nest-mark:nth-of-type(2){animation-delay:.95s}
+  .nest-mark:nth-of-type(3){animation-delay:1.25s}
+}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes pop{from{opacity:0;transform:translateY(-5px)}to{opacity:1;transform:none}}
+
+/* ============ FACT BAR ============ */
+.facts{
+  background:var(--hivis);color:var(--hivis-ink);
+  border-block:1px solid rgba(0,0,0,.12);
+}
+.facts-in{
+  display:grid;grid-template-columns:repeat(2,1fr);
+  padding-block:22px;gap:20px 12px;
+}
+@media(min-width:760px){.facts-in{grid-template-columns:repeat(4,1fr)}}
+.fact b{
+  display:block;font-family:var(--f-display);font-size:clamp(1.7rem,4vw,2.3rem);
+  font-weight:800;letter-spacing:-.03em;line-height:1;color:var(--hivis-ink);
+}
+.fact span{
+  display:block;margin-top:6px;font-family:var(--f-mono);font-size:.68rem;
+  letter-spacing:.12em;text-transform:uppercase;opacity:.8;
+}
+
+/* ============ GENERIC BLOCKS ============ */
+.head{display:flex;flex-direction:column;gap:12px;max-width:62ch;margin-bottom:clamp(28px,4vw,42px)}
+.head p{color:var(--muted);font-size:1.06rem}
+.prose{max-width:64ch;display:flex;flex-direction:column;gap:16px}
+.prose p{color:var(--body)}
+
+.mission{background:var(--surface)}
+.mission-grid{display:grid;gap:clamp(26px,4vw,46px)}
+@media(min-width:880px){.mission-grid{grid-template-columns:1fr 1fr}}
+.quote{
+  border-left:3px solid var(--violet-500);padding-left:20px;
+  font-family:var(--f-display);font-size:1.32rem;line-height:1.35;
+  font-weight:600;letter-spacing:-.02em;color:var(--ink);
+}
+
+/* ============ HUBS ============ */
+.hubs{display:grid;gap:14px}
+@media(min-width:760px){.hubs{grid-template-columns:repeat(3,1fr)}}
+.hub{
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+  padding:22px;display:flex;flex-direction:column;gap:8px;
+}
+.hub .pin{
+  width:26px;height:26px;border-radius:99px;background:var(--laterite);
+  display:grid;place-items:center;margin-bottom:4px;
+}
+.hub .pin svg{width:13px;height:13px;fill:#fff}
+.hub h3{font-size:1.34rem}
+.hub p{font-size:.94rem;color:var(--muted)}
+.hub-note{
+  margin-top:18px;padding:16px 18px;border-radius:var(--radius);
+  background:var(--surface-2);font-size:.94rem;color:var(--body);
+}
+
+/* ============ ROLES MANIFEST ============ */
+.roles{background:var(--surface)}
+.manifest{display:flex;flex-direction:column;gap:10px}
+.role{
+  display:grid;gap:6px 20px;align-items:center;
+  background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);
+  padding:20px 22px;text-decoration:none;
+  transition:border-color .15s ease,transform .15s ease,box-shadow .15s ease;
+}
+@media(min-width:820px){
+  .role{grid-template-columns:1fr auto auto;padding:22px 26px}
+}
+.role:hover{
+  border-color:var(--violet-500);transform:translateY(-2px);
+  box-shadow:0 6px 22px -12px var(--violet-500);
+}
+.role-main{display:flex;flex-direction:column;gap:5px;min-width:0}
+.role h3{color:var(--ink)}
+.role-meta{font-size:.9rem;color:var(--muted)}
+.role-count{
+  font-family:var(--f-mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--violet-500);font-weight:600;white-space:nowrap;
+}
+:root[data-theme="dark"] .role-count,
+:root:not([data-theme="light"]) .role-count{color:var(--violet-300)}
+@media (prefers-color-scheme:light){
+  :root:not([data-theme="dark"]) .role-count{color:var(--violet-500)}
+}
+.role-go{
+  display:inline-flex;align-items:center;gap:8px;white-space:nowrap;
+  font-weight:700;font-size:.95rem;color:var(--ink);
+}
+.role-go svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;transition:transform .15s ease}
+.role:hover .role-go svg{transform:translateX(3px)}
+
+/* ============ OFFER ============ */
+.offer-grid{display:grid;gap:14px}
+@media(min-width:700px){.offer-grid{grid-template-columns:repeat(2,1fr)}}
+.card{
+  border:1px solid var(--line);border-radius:var(--radius);padding:22px;
+  display:flex;flex-direction:column;gap:8px;background:var(--paper);
+}
+.card.lead{background:var(--violet-700);border-color:var(--violet-700);color:#E4D5F2}
+.card.lead h3{color:#fff}
+.card p{font-size:.95rem;color:var(--muted)}
+.card.lead p{color:#D9C6EB}
+.card .ico{
+  width:30px;height:30px;border-radius:8px;background:var(--surface-2);
+  display:grid;place-items:center;margin-bottom:4px;
+}
+.card.lead .ico{background:rgba(255,255,255,.16)}
+.card .ico svg{width:16px;height:16px;fill:none;stroke:var(--violet-500);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.card.lead .ico svg{stroke:var(--hivis)}
+
+.req{margin-top:16px;padding:22px;border-radius:var(--radius);background:var(--surface);border:1px solid var(--line)}
+.req ul{margin:12px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:9px}
+.req li{position:relative;padding-left:26px;font-size:.97rem}
+.req li::before{
+  content:"";position:absolute;left:4px;top:.58em;width:8px;height:8px;
+  border-radius:2px;background:var(--hivis);
+}
+
+/* ============ REFER ============ */
+.refer{background:var(--violet-900);color:#DBC9EC}
+.refer h2{color:#fff}
+.refer .eyebrow{color:var(--hivis)}
+.refer-in{display:flex;flex-direction:column;gap:18px;max-width:60ch}
+.share{display:flex;flex-wrap:wrap;gap:10px;margin-top:4px}
+.share a,.share button{
+  display:inline-flex;align-items:center;gap:9px;
+  font-family:var(--f-body);font-size:.95rem;font-weight:700;
+  padding:12px 20px;border-radius:99px;border:0;cursor:pointer;text-decoration:none;
+  background:rgba(255,255,255,.12);color:#fff;transition:background .15s ease;
+}
+.share a:hover,.share button:hover{background:rgba(255,255,255,.22)}
+.share svg{width:16px;height:16px;fill:currentColor}
+
+/* ============ FOOTER ============ */
+.ft{border-top:1px solid var(--line);padding-block:34px;background:var(--paper)}
+.ft-in{display:flex;flex-wrap:wrap;gap:18px 26px;align-items:center;justify-content:space-between}
+.ft-brands{display:flex;align-items:center;gap:13px}
+.ft .zip-logo{color:var(--ink);height:18px}
+.ft p{font-size:.86rem;color:var(--muted);max-width:46ch}
+:root[data-theme="dark"] .edo-logo,
+:root:not([data-theme="light"]) .ft .edo-logo{filter:invert(1) hue-rotate(180deg)}
+@media (prefers-color-scheme:light){
+  :root:not([data-theme="dark"]) .ft .edo-logo{filter:none}
+}
+</style>
+
+<header class="hdr">
+  <div class="wrap hdr-in">
+    <div class="brands">
+      <svg class="zip-logo" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 117 24.24" role="img" aria-label="Zipline"><g><path d="M11.12 8.14.45 4.98c-.59-.18-.59-1.04 0-1.22L11.12.61c2.74-.81 5.64-.81 8.37 0l10.68 3.16c.59.18.59 1.04 0 1.22L19.5 8.15c-2.74.81-5.64.81-8.38 0ZM11.12 17.98.45 14.83c-.59-.18-.59-1.04 0-1.22l10.68-3.16c2.74-.81 5.64-.81 8.37 0l10.68 3.16c.59.18.59 1.04 0 1.22l-10.67 3.16c-2.74.81-5.64.81-8.38 0Z"/></g><g><path d="M68.8 4.56c-3.87 0-7.02 2.58-7.02 7.39v12.29h3.11V17.4a7.023 7.023 0 0 0 10.93-5.83c0-3.88-3.14-7.02-7.02-7.02Zm0 10.94a3.93 3.93 0 1 1 .001-7.861A3.93 3.93 0 0 1 68.8 15.5M56.31 0v3.46h3.1V0zM83.28 0v3.46h3.1V0zM53.94 3.1 43.55 15.49h10.39v3.1H39.36v-3.1L49.75 3.1H39.36V0h14.58zM56.31 18.59V6.01h3.1v12.57h-3.1ZM83.28 18.59V6.01h3.1v12.57h-3.1ZM77.82 18.59V0h3.1v18.59z"/><path d="M109.98 4.56a7.016 7.016 0 0 1 6.92 8.2h-10.65c.5 1.58 1.98 2.73 3.74 2.73 1.15 0 2.18-.49 2.89-1.28h3.61a7 7 0 0 1-6.5 4.37c-3.88 0-7.02-3.14-7.02-7.02s3.14-7.02 7.02-7.02Zm0 3.09c-1.68 0-3.12 1.06-3.67 2.55h7.35a3.92 3.92 0 0 0-3.67-2.55Z"/><path d="M101.33 10.84c0-3.47-2.82-6.29-6.29-6.29s-6.29 2.81-6.29 6.29v7.75h3.1v-7.75c0-1.76 1.43-3.19 3.19-3.19s3.19 1.43 3.19 3.19v7.75h3.1z"/></g></svg>
+      <span class="x">&times;</span>
+      <img class="edo-logo" src="data:image/png;base64,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" alt="EdoMatch" style="filter:brightness(0) invert(1)">
+    </div>
+    <div class="lang" role="group" aria-label="Language / Langue">
+      <button type="button" data-lang-btn="fr" aria-pressed="true">FR</button>
+      <button type="button" data-lang-btn="en" aria-pressed="false">EN</button>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- ========== HERO ========== -->
+<div class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">
+        <span lang="fr">EdoMatch recrute pour Zipline &middot; Côte d'Ivoire</span>
+        <span lang="en">EdoMatch is hiring for Zipline &middot; Côte d'Ivoire</span>
+      </p>
+      <h1>
+        <span lang="fr">Zipline ouvre <span class="hl-mark">3 nouveaux hubs</span> en Côte d'Ivoire.</span>
+        <span lang="en">Zipline is opening <span class="hl-mark">3 new hubs</span> in Côte d'Ivoire.</span>
+      </h1>
+      <p class="lede">
+        <span lang="fr">60 recrutements. 6 métiers. Le logement est pris en charge si vous déménagez. Candidature en 2 minutes.</span>
+        <span lang="en">60 hires. 6 jobs. Housing allowance if you relocate. Apply in 2 minutes.</span>
+      </p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#postes">
+          <span lang="fr">Voir les 6 postes</span>
+          <span lang="en">See the 6 jobs</span>
+        </a>
+        <a class="btn btn-ghost" href="#hubs">
+          <span lang="fr">Où sont les hubs&nbsp;?</span>
+          <span lang="en">Where are the hubs?</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="route">
+      
+      <p class="route-lbl">
+        <span lang="fr">Les 3 nouveaux hubs</span>
+        <span lang="en">The 3 new hubs</span>
+      </p>
+      <svg viewBox="0 0 260 108" role="img" aria-label="Biankouma, Kouto, San Pédro">
+        <path class="arc" d="M32 74 C 70 18, 108 22, 130 46 S 196 92, 226 34"/>
+        <g class="nest-mark">
+          <circle class="nest-ring" cx="32" cy="74" r="7"/>
+          <circle class="nest-dot" cx="32" cy="74" r="3.1"/>
+          <text class="nest-txt" x="32" y="92" text-anchor="middle">BIANKOUMA</text>
+          <text class="nest-sub" x="32" y="101" text-anchor="middle">20 POSTES</text>
+        </g>
+        <g class="nest-mark">
+          <circle class="nest-ring" cx="130" cy="46" r="7"/>
+          <circle class="nest-dot" cx="130" cy="46" r="3.1"/>
+          <text class="nest-txt" x="130" y="30" text-anchor="middle">KOUTO</text>
+          <text class="nest-sub" x="130" y="21" text-anchor="middle">20 POSTES</text>
+        </g>
+        <g class="nest-mark">
+          <circle class="nest-ring" cx="226" cy="34" r="7"/>
+          <circle class="nest-dot" cx="226" cy="34" r="3.1"/>
+          <text class="nest-txt" x="226" y="18" text-anchor="middle">SAN PÉDRO</text>
+          <text class="nest-sub" x="226" y="9" text-anchor="middle">20 POSTES</text>
+        </g>
+      </svg>
+    </div>
+  </div>
+
+  <div class="facts" style="margin-top:clamp(40px,6vw,64px)">
+    <div class="wrap facts-in">
+      <div class="fact"><b>3</b><span lang="fr">Hubs</span><span lang="en">Hubs</span></div>
+      <div class="fact"><b>60</b><span lang="fr">Postes</span><span lang="en">Roles</span></div>
+      <div class="fact"><b>6</b><span lang="fr">Métiers</span><span lang="en">Job types</span></div>
+      <div class="fact"><b>0&ndash;5</b><span lang="fr">Ans d'expérience</span><span lang="en">Years experience</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ========== MISSION ========== -->
+<section class="mission">
+  <div class="wrap mission-grid">
+    <div class="prose">
+      <p class="eyebrow">
+        <span lang="fr">Qui est Zipline</span>
+        <span lang="en">Who Zipline is</span>
+      </p>
+      <h2>
+        <span lang="fr">Des drones qui livrent des médicaments là où les routes n'arrivent pas.</span>
+        <span lang="en">Drones that deliver medicine where roads don't reach.</span>
+      </h2>
+      <p lang="fr">Zipline construit et exploite le plus grand système de livraison autonome au monde. Depuis un hub — que Zipline appelle un «&nbsp;nest&nbsp;» — des drones décollent avec du sang, des vaccins et des médicaments, et les larguent en quelques minutes devant un centre de santé.</p>
+      <p lang="en">Zipline builds and operates the world's largest autonomous delivery system. From a hub — Zipline calls it a "nest" — drones take off carrying blood, vaccines and medicines, and drop them at a health centre within minutes.</p>
+      <p lang="fr">Tout a commencé au Rwanda en 2016. Aujourd'hui, Zipline opère à l'échelle nationale au Rwanda, au Ghana, au Nigeria et au Kenya, ainsi qu'aux États-Unis. La Côte d'Ivoire est la prochaine étape.</p>
+      <p lang="en">It started in Rwanda in 2016. Today Zipline operates at national scale in Rwanda, Ghana, Nigeria and Kenya, as well as in the United States. Côte d'Ivoire is next.</p>
+    </div>
+    <div class="prose" style="justify-content:center">
+      <p class="quote">
+        <span lang="fr">«&nbsp;Un accès immédiat aux produits de santé essentiels, pour chaque personne, partout.&nbsp;»</span>
+        <span lang="en">"Instant access to essential health products, for every person, everywhere."</span>
+      </p>
+      <p style="font-size:.94rem;color:var(--muted)">
+        <span lang="fr">C'est la mission de Zipline en Afrique. Chaque hub qui ouvre, c'est une région entière qui reçoit ses médicaments en minutes plutôt qu'en jours. Les personnes recrutées ici font tourner ce hub&nbsp;: elles chargent, elles préparent, elles réparent, elles volent.</span>
+        <span lang="en">That is Zipline's mission in Africa. Every hub that opens means a whole region gets its medicine in minutes instead of days. The people hired here are the ones who run that hub: they load, they prepare, they repair, they fly.</span>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== HUBS ========== -->
+<section id="hubs">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">
+        <span lang="fr">Les lieux</span>
+        <span lang="en">The locations</span>
+      </p>
+      <h2>
+        <span lang="fr">Trois hubs. Vingt recrutements par hub.</span>
+        <span lang="en">Three hubs. Twenty hires per hub.</span>
+      </h2>
+      <p>
+        <span lang="fr">Chaque hub a besoin des mêmes 6 métiers. Vous postulez une fois pour le métier qui vous correspond&nbsp;— nous vous orientons vers le hub.</span>
+        <span lang="en">Every hub needs the same 6 jobs. You apply once for the job that fits you — we place you at a hub.</span>
+      </p>
+    </div>
+
+    <div class="hubs">
+      <div class="hub">
+        <div class="pin"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg></div>
+        <h3>Biankouma</h3>
+        <p>
+          <span lang="fr">Ouest, région du Tonkpi. 20 postes à pourvoir.</span>
+          <span lang="en">West, Tonkpi region. 20 roles open.</span>
+        </p>
+      </div>
+      <div class="hub">
+        <div class="pin"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg></div>
+        <h3>Kouto</h3>
+        <p>
+          <span lang="fr">Nord, région de la Bagoué. 20 postes à pourvoir.</span>
+          <span lang="en">North, Bagoué region. 20 roles open.</span>
+        </p>
+      </div>
+      <div class="hub">
+        <div class="pin"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg></div>
+        <h3>San Pédro</h3>
+        <p>
+          <span lang="fr">Sud-ouest, côte atlantique. 20 postes à pourvoir.</span>
+          <span lang="en">South-west, Atlantic coast. 20 roles open.</span>
+        </p>
+      </div>
+    </div>
+
+    <p class="hub-note">
+      <span lang="fr"><strong>Entretiens à Abidjan.</strong> La formation se déroule sur le hub Zipline existant de Daloa, avant votre prise de poste.</span>
+      <span lang="en"><strong>Interviews take place in Abidjan.</strong> Training runs at Zipline's existing hub in Daloa before you start.</span>
+    </p>
+  </div>
+</section>
+
+<!-- ========== ROLES ========== -->
+<section class="roles" id="postes">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">
+        <span lang="fr">Les postes</span>
+        <span lang="en">The jobs</span>
+      </p>
+      <h2>
+        <span lang="fr">6 métiers. Choisissez le vôtre et postulez.</span>
+        <span lang="en">6 jobs. Pick yours and apply.</span>
+      </h2>
+      <p>
+        <span lang="fr">Chaque métier est recruté sur les trois hubs. Cliquez pour lire la description complète et déposer votre candidature.</span>
+        <span lang="en">Every job is hired across all three hubs. Tap to read the full description and submit your application.</span>
+      </p>
+    </div>
+
+    <div class="manifest">
+
+      <a class="role" href="https://edomatch.com/jobs/edomatch-dual-operator-operateur-polyvalent-mWvICY">
+        <div class="role-main">
+          <h3><span lang="fr">Opérateur polyvalent</span><span lang="en">Dual Operator</span></h3>
+          <p class="role-meta">
+            <span lang="fr">Formation scientifique ou technique &middot; 0&ndash;2 ans d'expérience</span>
+            <span lang="en">Science or engineering background &middot; 0&ndash;2 years' experience</span>
+          </p>
+        </div>
+        <span class="role-count"><span lang="fr">24 postes</span><span lang="en">24 roles</span></span>
+        <span class="role-go">
+          <span lang="fr">Postuler</span><span lang="en">Apply</span>
+          <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </span>
+      </a>
+
+      <a class="role" href="https://edomatch.com/jobs/edomatch-technicien-de-maintenance-aeronautique-flight-technician-Fgr05T">
+        <div class="role-main">
+          <h3><span lang="fr">Technicien de maintenance aéronautique</span><span lang="en">Flight Technician</span></h3>
+          <p class="role-meta">
+            <span lang="fr">Génie mécanique ou électrique &middot; 0&ndash;3 ans d'expérience</span>
+            <span lang="en">Mechanical or electrical engineering &middot; 0&ndash;3 years' experience</span>
+          </p>
+        </div>
+        <span class="role-count"><span lang="fr">15 postes</span><span lang="en">15 roles</span></span>
+        <span class="role-go">
+          <span lang="fr">Postuler</span><span lang="en">Apply</span>
+          <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </span>
+      </a>
+
+      <a class="role" href="https://edomatch.com/jobs/edomatch-specialiste-des-operations-de-preparation-des-commandes-fulfillment-operations-specialist-2aMiLO">
+        <div class="role-main">
+          <h3><span lang="fr">Spécialiste des opérations de préparation des commandes</span><span lang="en">Fulfillment Operations Specialist</span></h3>
+          <p class="role-meta">
+            <span lang="fr">Pharmacie diplômée ou logistique de santé &middot; 1&ndash;5 ans d'expérience</span>
+            <span lang="en">Licensed pharmacy or health logistics &middot; 1&ndash;5 years' experience</span>
+          </p>
+        </div>
+        <span class="role-count"><span lang="fr">9 postes</span><span lang="en">9 roles</span></span>
+        <span class="role-go">
+          <span lang="fr">Postuler</span><span lang="en">Apply</span>
+          <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </span>
+      </a>
+
+      <a class="role" href="https://edomatch.com/jobs/edomatch-conseiller-ere-relation-client-customer-care-advocate-WUO0ao">
+        <div class="role-main">
+          <h3><span lang="fr">Conseiller(ère) relation client</span><span lang="en">Customer Care Advocate</span></h3>
+          <p class="role-meta">
+            <span lang="fr">Profil scientifique ou santé &middot; 0&ndash;2 ans d'expérience</span>
+            <span lang="en">Science or health background &middot; 0&ndash;2 years' experience</span>
+          </p>
+        </div>
+        <span class="role-count"><span lang="fr">6 postes</span><span lang="en">6 roles</span></span>
+        <span class="role-go">
+          <span lang="fr">Postuler</span><span lang="en">Apply</span>
+          <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </span>
+      </a>
+
+      <a class="role" href="https://edomatch.com/jobs/edomatch-coordinateur-trice-des-partenariats-partnerships-coordinator-5404dZ">
+        <div class="role-main">
+          <h3><span lang="fr">Coordinateur(trice) des partenariats</span><span lang="en">Partnerships Coordinator</span></h3>
+          <p class="role-meta">
+            <span lang="fr">Relations partenaires &middot; hôpitaux, communautés, autorités locales</span>
+            <span lang="en">Stakeholder management &middot; hospitals, communities, local government</span>
+          </p>
+        </div>
+        <span class="role-count"><span lang="fr">3 postes</span><span lang="en">3 roles</span></span>
+        <span class="role-go">
+          <span lang="fr">Postuler</span><span lang="en">Apply</span>
+          <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </span>
+      </a>
+
+      <a class="role" href="https://edomatch.com/jobs/edomatch-superviseur-des-installations-facility-supervisor-udIpjq">
+        <div class="role-main">
+          <h3><span lang="fr">Superviseur des installations</span><span lang="en">Facility Supervisor</span></h3>
+          <p class="role-meta">
+            <span lang="fr">Maintenance des sites &middot; électricité, groupes électrogènes, eau, sécurité</span>
+            <span lang="en">Facilities maintenance &middot; electrical, generators, water, security</span>
+          </p>
+        </div>
+        <span class="role-count"><span lang="fr">3 postes</span><span lang="en">3 roles</span></span>
+        <span class="role-go">
+          <span lang="fr">Postuler</span><span lang="en">Apply</span>
+          <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== OFFER + REQUIREMENTS ========== -->
+<section>
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">
+        <span lang="fr">Ce que vous obtenez</span>
+        <span lang="en">What you get</span>
+      </p>
+      <h2>
+        <span lang="fr">Vous déménagez&nbsp;? Le logement est pris en charge.</span>
+        <span lang="en">Relocating? Housing is covered.</span>
+      </h2>
+    </div>
+
+    <div class="offer-grid">
+      <div class="card lead">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M9.5 21v-6h5v6"/></svg></div>
+        <h3><span lang="fr">Indemnité de logement</span><span lang="en">Housing allowance</span></h3>
+        <p>
+          <span lang="fr">Zipline verse une indemnité de logement mensuelle si vous vous installez près de votre hub. Vous n'avancez pas votre déménagement seul.</span>
+          <span lang="en">Zipline pays a monthly housing allowance when you relocate to be near your hub. You don't carry the move on your own.</span>
+        </p>
+      </div>
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3 2 8l10 5 10-5-10-5Z"/><path d="M6 10.5V16c0 1.7 2.7 3 6 3s6-1.3 6-3v-5.5"/></svg></div>
+        <h3><span lang="fr">Formation payée sur site</span><span lang="en">Paid on-site training</span></h3>
+        <p>
+          <span lang="fr">Vous êtes formé sur le hub Zipline de Daloa avant de prendre votre poste. Aucune expérience du drone n'est requise à l'entrée.</span>
+          <span lang="en">You're trained at Zipline's Daloa hub before you start. No drone experience needed to get in.</span>
+        </p>
+      </div>
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 20v-6"/><path d="M10 20V8"/><path d="M16 20v-9"/><path d="M22 20V4"/></svg></div>
+        <h3><span lang="fr">Un métier d'avenir</span><span lang="en">A career that goes somewhere</span></h3>
+        <p>
+          <span lang="fr">Aviation autonome et logistique de santé&nbsp;: une expérience rare, dans une entreprise qui opère à l'échelle nationale dans plusieurs pays.</span>
+          <span lang="en">Autonomous aviation and health logistics: rare experience, inside a company operating at national scale in several countries.</span>
+        </p>
+      </div>
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M17 20v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9.5" cy="7" r="3.5"/><path d="M22 20v-2a4 4 0 0 0-3-3.85"/></svg></div>
+        <h3><span lang="fr">Un hub dès le premier jour</span><span lang="en">A hub from day one</span></h3>
+        <p>
+          <span lang="fr">Vous rejoignez une équipe qui ouvre le site. Ce sont les premières recrues qui construisent la façon dont le hub fonctionne.</span>
+          <span lang="en">You join the team that opens the site. The first hires shape how the hub runs.</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="req">
+      <h3><span lang="fr">Ce que nous demandons</span><span lang="en">What we ask</span></h3>
+      <ul>
+        <li>
+          <span lang="fr">Français courant. L'anglais est un plus, pas une condition.</span>
+          <span lang="en">Fluent French. English is a plus, not a requirement.</span>
+        </li>
+        <li>
+          <span lang="fr">Être prêt à s'installer à l'intérieur du pays, près de votre hub.</span>
+          <span lang="en">Willing to relocate upcountry, near your hub.</span>
+        </li>
+        <li>
+          <span lang="fr">Le sens du terrain&nbsp;: humble, rigoureux, prêt à mettre les mains dans le travail.</span>
+          <span lang="en">Hands-on attitude: low ego, strong work ethic, ready to do the work yourself.</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ========== REFER ========== -->
+<section class="refer">
+  <div class="wrap refer-in">
+    <p class="eyebrow">
+      <span lang="fr">Faites passer le mot</span>
+      <span lang="en">Pass it on</span>
+    </p>
+    <h2>
+      <span lang="fr">Ce n'est pas pour vous&nbsp;? Parlez-en à vos amis.</span>
+      <span lang="en">Not for you? Tell your friends.</span>
+    </h2>
+    <p>
+      <span lang="fr">60 postes, c'est beaucoup — et nous recrutons vite. Si vous connaissez un technicien, un pharmacien, un ingénieur ou un jeune diplômé scientifique, envoyez-lui cette page. La plupart des personnes recrutées arrivent par quelqu'un qu'elles connaissent.</span>
+      <span lang="en">60 roles is a lot — and we're hiring fast. If you know a technician, a pharmacist, an engineer or a science graduate, send them this page. Most of the people we hire come through someone they know.</span>
+    </p>
+    <div class="share">
+      <a id="sh-wa" href="#" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm5.8 14.16c-.24.68-1.42 1.3-1.95 1.35-.5.05-1.13.07-1.82-.11-.42-.11-.96-.29-1.65-.59-2.9-1.25-4.8-4.17-4.94-4.36-.15-.19-1.19-1.58-1.19-3.02 0-1.43.75-2.14 1.02-2.43.27-.29.58-.36.78-.36.19 0 .39 0 .56.01.18.01.42-.07.66.5.24.58.83 2 .9 2.15.07.14.12.31.02.5-.09.19-.14.31-.28.48-.14.17-.29.37-.42.5-.14.14-.28.29-.12.57.16.29.72 1.18 1.54 1.91 1.06.94 1.95 1.23 2.23 1.37.28.14.44.12.6-.07.17-.19.7-.81.88-1.09.19-.29.37-.24.63-.14.26.09 1.66.78 1.94.93.28.14.47.21.54.33.07.12.07.68-.17 1.37Z"/></svg>
+        WhatsApp
+      </a>
+      <a id="sh-fb" href="#" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.52 1.5-3.91 3.77-3.91 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.78-1.63 1.57v1.89h2.78l-.45 2.91h-2.33V22c4.78-.76 8.44-4.92 8.44-9.94Z"/></svg>
+        Facebook
+      </a>
+      <button type="button" id="sh-copy">
+        <svg viewBox="0 0 24 24"><path d="M9 9h10v12H9z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M5 15V3h10" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+        <span data-copy-label>
+          <span lang="fr">Copier le lien</span>
+          <span lang="en">Copy link</span>
+        </span>
+      </button>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="ft">
+  <div class="wrap ft-in">
+    <div class="ft-brands">
+      <svg class="zip-logo" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 117 24.24" role="img" aria-label="Zipline"><g><path d="M11.12 8.14.45 4.98c-.59-.18-.59-1.04 0-1.22L11.12.61c2.74-.81 5.64-.81 8.37 0l10.68 3.16c.59.18.59 1.04 0 1.22L19.5 8.15c-2.74.81-5.64.81-8.38 0ZM11.12 17.98.45 14.83c-.59-.18-.59-1.04 0-1.22l10.68-3.16c2.74-.81 5.64-.81 8.37 0l10.68 3.16c.59.18.59 1.04 0 1.22l-10.67 3.16c-2.74.81-5.64.81-8.38 0Z"/></g><g><path d="M68.8 4.56c-3.87 0-7.02 2.58-7.02 7.39v12.29h3.11V17.4a7.023 7.023 0 0 0 10.93-5.83c0-3.88-3.14-7.02-7.02-7.02Zm0 10.94a3.93 3.93 0 1 1 .001-7.861A3.93 3.93 0 0 1 68.8 15.5M56.31 0v3.46h3.1V0zM83.28 0v3.46h3.1V0zM53.94 3.1 43.55 15.49h10.39v3.1H39.36v-3.1L49.75 3.1H39.36V0h14.58zM56.31 18.59V6.01h3.1v12.57h-3.1ZM83.28 18.59V6.01h3.1v12.57h-3.1ZM77.82 18.59V0h3.1v18.59z"/><path d="M109.98 4.56a7.016 7.016 0 0 1 6.92 8.2h-10.65c.5 1.58 1.98 2.73 3.74 2.73 1.15 0 2.18-.49 2.89-1.28h3.61a7 7 0 0 1-6.5 4.37c-3.88 0-7.02-3.14-7.02-7.02s3.14-7.02 7.02-7.02Zm0 3.09c-1.68 0-3.12 1.06-3.67 2.55h7.35a3.92 3.92 0 0 0-3.67-2.55Z"/><path d="M101.33 10.84c0-3.47-2.82-6.29-6.29-6.29s-6.29 2.81-6.29 6.29v7.75h3.1v-7.75c0-1.76 1.43-3.19 3.19-3.19s3.19 1.43 3.19 3.19v7.75h3.1z"/></g></svg>
+      <span class="x" style="color:var(--muted)">&times;</span>
+      <img class="edo-logo" src="data:image/png;base64,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" alt="EdoMatch">
+    </div>
+    <p>
+      <span lang="fr">EdoMatch conduit ce recrutement pour Zipline en Côte d'Ivoire. Les candidatures sont traitées sur edomatch.com.</span>
+      <span lang="en">EdoMatch is running this recruitment for Zipline in Côte d'Ivoire. Applications are handled on edomatch.com.</span>
+    </p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var root = document.documentElement;
+
+  /* ---- language ---- */
+  function setLang(l){
+    root.setAttribute('data-lang', l);
+    root.setAttribute('lang', l);
+    document.querySelectorAll('[data-lang-btn]').forEach(function(b){
+      b.setAttribute('aria-pressed', String(b.dataset.langBtn === l));
+    });
+    try{ localStorage.setItem('zx-lang', l); }catch(e){}
+  }
+  var saved = null;
+  try{ saved = localStorage.getItem('zx-lang'); }catch(e){}
+  var nav = (navigator.language || 'fr').slice(0,2).toLowerCase();
+  setLang(saved || (nav === 'en' ? 'en' : 'fr'));
+  document.querySelectorAll('[data-lang-btn]').forEach(function(b){
+    b.addEventListener('click', function(){ setLang(b.dataset.langBtn); });
+  });
+
+  /* ---- share ---- */
+  var url = location.href;
+  var msgFR = "Zipline recrute 60 personnes en Côte d'Ivoire (Biankouma, Kouto, San Pédro). 6 métiers, logement pris en charge. Postule ici : ";
+  var msgEN = "Zipline is hiring 60 people in Côte d'Ivoire (Biankouma, Kouto, San Pédro). 6 jobs, housing allowance. Apply here: ";
+  function shareText(){ return root.getAttribute('data-lang') === 'en' ? msgEN : msgFR; }
+  function refreshShare(){
+    document.getElementById('sh-wa').href =
+      'https://wa.me/?text=' + encodeURIComponent(shareText() + url);
+    document.getElementById('sh-fb').href =
+      'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(url);
+  }
+  refreshShare();
+  document.querySelectorAll('[data-lang-btn]').forEach(function(b){
+    b.addEventListener('click', refreshShare);
+  });
+
+  var copyBtn = document.getElementById('sh-copy');
+  copyBtn.addEventListener('click', function(){
+    var done = function(){
+      var lbl = copyBtn.querySelector('[data-copy-label]');
+      var old = lbl.innerHTML;
+      lbl.textContent = root.getAttribute('data-lang') === 'en' ? 'Link copied' : 'Lien copié';
+      setTimeout(function(){ lbl.innerHTML = old; }, 1900);
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(url).then(done, function(){});
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

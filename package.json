@@ -1,0 +1,8 @@
+{
+  "name": "zipline-recruitment-edomatch",
+  "version": "1.0.0",
+  "private": true,
+  "description": "EdoMatch x Zipline recruitment landing page - Cote d'Ivoire",
+  "engines": { "node": ">=18" },
+  "scripts": { "start": "node server.js" }
+}
