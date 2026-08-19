@@ -49,6 +49,9 @@ All content lives in `index.html`. Every translatable string is a pair:
 
 Edit both halves so the toggle stays in sync, then commit and push — Railway redeploys.
 
-## Still to do
+## Notes
 
-- Drop the hero photo in: see `HERO-PHOTO.md`.
+- The hero photo is inlined in `index.html`; `hero.jpg` is the source copy. See `HERO-PHOTO.md`.
+- Colours: Zipline brand (cream `#F7F4E8`, violet `#6C3FFF`) for the body;
+  EdoMatch (black `#0D0D0D`, green `#5AA946`) for header, footer and referral block.
+- No salary figures anywhere on the page — housing allowance only.
