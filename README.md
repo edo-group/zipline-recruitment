@@ -40,13 +40,13 @@ fully self-contained — all CSS, JS, logos and images are inlined, so the page
 makes **no external requests**. That keeps it fast on Ivorian mobile data, which
 is where the Meta traffic lands.
 
-| File | Purpose |
-|---|---|
-| `index.html` | The entire site |
-| `server.js` | Static server; reads `PORT`, falls back to 8080 |
-| `railway.json` | Build + deploy config |
-| `robots.txt`, `sitemap.xml` | Served at their paths |
-| `cr-full.jpg` | Source copy of the ad creative (not loaded at runtime) |
+| File                        | Purpose                                                |
+| --------------------------- | ------------------------------------------------------ |
+| `index.html`                | The entire site                                        |
+| `server.js`                 | Static server; reads `PORT`, falls back to 8080        |
+| `railway.json`              | Build + deploy config                                  |
+| `robots.txt`, `sitemap.xml` | Served at their paths                                  |
+| `cr-full.jpg`               | Source copy of the ad creative (not loaded at runtime) |
 
 ## Run locally
 
@@ -66,7 +66,7 @@ so ad traffic can apply without scrolling. Everything else sits below.
 2. **The 6 roles**, each linking to its live application form on edomatch.com
 3. "None of these fit you? Sign up anyway" → `edomatch.com/jobs`
 4. Zipline's story (B1 reading level, written for Ivorian readers)
-5. The 3 locations: **Biankouma · Kouto · San Pédro** (20 hires each)
+5. The 3 locations: **Biankouma · Kouto · Bondoukou** (20 hires each)
 6. What you get — housing allowance for relocation, training, career
 7. Referral block — WhatsApp share with a pre-written message, plus copy link
 
@@ -80,7 +80,7 @@ These are deliberate. Please keep them if you edit:
 - **No salary figures anywhere.** Housing allowance for relocation only.
 - **No qualifications or years of experience** on the role cards — they describe
   the work instead, so nobody screens themselves out before applying.
-- **Never the word "hubs"** — the page says *sites* (FR) / *locations* (EN) and
+- **Never the word "hubs"** — the page says _sites_ (FR) / _locations_ (EN) and
   defines it once. The `#hubs` id and `.hub` classes are internal names only.
 - **Daloa is not mentioned.** It is the training centre, not a hiring location.
 
@@ -89,8 +89,7 @@ These are deliberate. Please keep them if you edit:
 Every translatable string is a pair:
 
 ```html
-<span lang="fr">Texte français</span>
-<span lang="en">English text</span>
+<span lang="fr">Texte français</span> <span lang="en">English text</span>
 ```
 
 Edit both halves so the toggle stays in sync, then commit and push — Railway
@@ -111,4 +110,4 @@ up to full width.
 - [ ] **Replace the ad creatives in the phone mockup** — see `AD-CREATIVE.md`.
       Both slots currently hold a placeholder.
 - [ ] **Check the towns named in the ad creatives match the page**
-      (Biankouma · Kouto · San Pédro), or candidates apply to the wrong place.
+      (Biankouma · Kouto · Bondoukou), or candidates apply to the wrong place.
